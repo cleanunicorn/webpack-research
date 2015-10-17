@@ -14,8 +14,7 @@ module.exports = {
 			{ test: /\.css$/, loader: 'style!css' },
 			{ test: /\.(png|jpeg|jpg|gif|svg)$/i, loaders:
 				[
-					'file?hash=sha512&digest=hex&name=[hash].[ext]',
-					'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+					'url-loader'
 				] } // inline base64 URLs for <=8k images, direct URLs for the rest
 		]
 	}
