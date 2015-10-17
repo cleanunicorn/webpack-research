@@ -49,10 +49,8 @@
 	__webpack_require__(1);
 	__webpack_require__(5);
 
-	/*
-	var img = require("../img/webpack-hot1.png");
-	document.write(img);
-	*/
+	//var img = require("../img/webpack-hot1.png");
+	//document.write(img);
 
 	document.write(__webpack_require__(8));
 
