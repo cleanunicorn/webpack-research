@@ -1,6 +1,7 @@
 var webpack = require("webpack");
 
 module.exports = {
+    debug: 'eval',
     plugins: [
         new webpack.ProvidePlugin({
             $: "jquery",
@@ -9,6 +10,7 @@ module.exports = {
     ],
     entry: './js/main.js',
     output: {
+        path: 'dist/',
         filename: './js/bundle.js'
     },
     module: {
